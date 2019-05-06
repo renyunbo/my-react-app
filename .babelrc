@@ -1,0 +1,6 @@
+{
+    "presets": ["env","react","stage-0"],//presets表示babel支持的版本
+    "plugins": [
+        "transform-runtime"
+    ]
+}
