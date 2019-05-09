@@ -1,7 +1,7 @@
 const path = require('path');
 const HTMLPlugin = require('html-webpack-plugin');//这个插件可以创建HTML文件，并自动将依赖写入HTML文件中
 const webpack = require('webpack');
-
+const CleanWebpackPlugin  = require('clean-webpack-plugin');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');//Webpack单独打包编译less
 // multiple extract instances
 let extractCSS = new ExtractTextPlugin('stylesheets/[name].css');
@@ -41,6 +41,8 @@ module.exports = {
         // 实现刷新浏览器必写
         new webpack.HotModuleReplacementPlugin(),
         //单独打包编译less
-        new ExtractTextPlugin('style.css')
+        new ExtractTextPlugin('style.css'),
+        //打包之前删除dist文件夹里面的内容
+        new CleanWebpackPlugin()
     ]
 }
