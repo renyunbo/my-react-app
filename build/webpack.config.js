@@ -6,6 +6,8 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');//Webpack单独�
 // multiple extract instances
 let extractCSS = new ExtractTextPlugin('stylesheets/[name].css');
 let extractLESS = new ExtractTextPlugin('stylesheets/[name].less');
+const NODE_ENV=process.env.NODE_ENV;
+console.log("--------"+process.env.NODE_ENV+"-----------");
 
 module.exports = {
     //实现刷新浏览器webpack-hot-middleware/client?noInfo=true&reload=true 是必填的
