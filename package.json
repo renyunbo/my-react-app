@@ -115,6 +115,7 @@
     "postcss-loader": "^2.0.6",
     "precss": "^1.4.0",
     "react-addons-test-utils": "^15.5.1",
+    "react-router-dom": "^5.0.0",
     "react-transform-catch-errors": "^1.0.2",
     "react-transform-hmr": "^1.0.4",
     "recluster": "^0.4.5",
@@ -149,7 +150,7 @@
     "urlencode": "^1.1.0",
     "uuid": "^3.0.1",
     "validator": "^5.1.0",
-    "webpack": "^3.11.0",
+    "webpack": "^3.12.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^3.3.1",
     "webpack-hot-middleware": "2.18.0",
@@ -160,6 +161,7 @@
     "winston-request-logger": "^1.0.7"
   },
   "dependencies": {
+    "chromedriver": "^74.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
