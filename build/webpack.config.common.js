@@ -38,8 +38,6 @@ module.exports = {
         new HTMLPlugin({
             title: 'Hello app'
         }),
-        // 实现刷新浏览器必写
-        new webpack.HotModuleReplacementPlugin(),
         //单独打包编译less
         new ExtractTextPlugin('style.css')
     ]
